@@ -112,7 +112,7 @@ nav li {
 
 .product img {
   max-height: 9rem;
-  width: auto;
+  max-width: 9rem;
   margin: auto;
   padding: 2rem;
 }
