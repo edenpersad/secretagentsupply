@@ -10,6 +10,7 @@ html {
   width: 960px;
   margin: 0 auto;
   display: block;
+  overflow: hidden;
 }
 
 h1, h2, h3 {
@@ -34,6 +35,7 @@ header {
 
 .header {
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
 }
 
@@ -166,11 +168,21 @@ footer {
   background-color: black;
 }
 
+footer p {
+  text-align: left;
+}
+
 /* media queries */
+
+/* tablet */
 
 @media only screen and (max-width: 1024px) {
   #glasses{
     display: none;
+  }
+
+  .container {
+    max-width: 100%;
   }
 
   .product {
@@ -183,6 +195,61 @@ footer {
 
   #menu {
     display: flex;
+  }
+
+}
+
+/* mobile */
+
+
+@media only screen and (max-width: 470px) {
+
+  .container {
+    max-width: 100%;
+  }
+
+  .banner {
+    height: 5rem;
+    padding-top: 10rem;
+  }
+
+  #new-arrival {
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+
+  #new-arrival h2 {
+    font-size: 0.77rem;
+  }
+
+  #new-arrival h1 {
+    font-size: 1rem;
+  }
+
+  #watch {
+    display: none;
+  }
+
+  .product-grid {
+    justify-content: space-around;
+  }
+
+  .product {
+    width: 90%;
+  }
+
+  .info-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info {
+    width: 90%;
+    margin-bottom: 0.5rem;
+  }
+
+  footer p {
+    text-align: center;
   }
 
 }
