@@ -92,6 +92,15 @@ nav li {
   padding: 0.75rem 0 0.75rem 0;
 }
 
+#menu {
+  display: none;
+}
+
+#menu ul {
+  display: flex;
+  justify-content: center;
+}
+
 /* main body */
 
 /* product grid */
@@ -122,4 +131,58 @@ nav li {
   width: 100%;
   text-align: center;
   padding: 0.5rem 0;
+}
+
+/* location / hours */
+
+.info-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 3rem 0 4rem 0;
+
+}
+
+.info {
+  width: 35%;
+}
+
+.info span {
+  padding: 1rem 2rem;
+  display: block;
+  background-color: black;
+}
+
+.info p {
+  color: black;
+}
+
+/* footer */
+
+footer {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  background-color: black;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 1024px) {
+  #glasses{
+    display: none;
+  }
+
+  .product {
+    width: 47%;
+  }
+
+  #full-nav {
+    display: none;
+  }
+
+  #menu {
+    display: flex;
+  }
+
 }

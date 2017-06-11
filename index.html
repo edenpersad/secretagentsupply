@@ -32,7 +32,7 @@
 
   <!--navigation-->
 
-  <nav>
+  <nav id="full-nav">
     <div class="container">
       <ul>
         <li><a href="#eyewear">Eyewear</a></li>
@@ -41,6 +41,14 @@
         <li><a href="#vehicles">Vehicles</a></li>
         <li><a href="#classes">Classes</a></li>
         <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav id="menu">
+    <div class="container">
+      <ul>
+        <li><a href="#menu">Menu</a></li>
       </ul>
     </div>
   </nav>
@@ -55,21 +63,21 @@
 
           <!--pen-->
 
-          <div class="product">
+          <div class="product" id="pen">
             <img src="./resources/images/pen.png" alt="Pen">
             <span>Exploding Pen</span>
           </div>
 
           <!--watch-->
 
-          <div class="product">
+          <div class="product" id="watch">
             <img src="./resources/images/watch.png" alt="Watch">
             <span>Cellular Watch</span>
           </div>
 
           <!--glasses-->
 
-          <div class="product">
+          <div class="product" id="glasses">
             <img src="./resources/images/glasses.png" alt="Glasses">
             <span>Thermal Glasses</span>
           </div>
@@ -77,24 +85,29 @@
       </div>
 
       <!--location-->
+      <div class="container info-grid">
 
-      <div class="location">
-        <span>Location</span>
-        <span>-47.346436, 84.32354</span>
-      </div>
+        <div class="info">
+          <span>Location</span>
+          <p>-47.346436, 84.32354</p>
+        </div>
 
       <!--hours-->
 
-      <div class="hours">
-        <span>Hours</span>
-        <span>-47.346436, 84.32354</span>
-      </div>
+        <div class="info">
+          <span>Hours</span>
+          <p>0800 - 1800</p>
+        </div>
+
+    </div>
 
   </div>
 
   <!--footer-->
 
-  <footer>Copyright Secret Agent Supply Inc.</footer>
+  <footer>
+    <span class="container">Copyright Secret Agent Supply Inc.</span>
+  </footer>
 
 
 </body>
